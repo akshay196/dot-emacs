@@ -35,5 +35,11 @@ package-list-packages` to browse and install packages from MELPA.
 
    Install Jedi Python server: https://tkf.github.io/emacs-jedi/latest/#quick-start
 
+6. [Linum highlight current line number](https://github.com/targzeta/linum-highlight-current-line-number)
+
+   highlight the current line number with a custom face.
+
+   Enable linum-mode, `M-x linum-mode`
+
 
 Customization in progress..
