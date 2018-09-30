@@ -1,4 +1,3 @@
-
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode 0)
@@ -6,7 +5,7 @@
 (show-paren-mode t)
 (setq column-number-mode t)
 
-;; yes and no
+;; y or n
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; Key bindings
@@ -26,12 +25,10 @@
 (setq auto-save-file-name-transforms
       `((".*" ,"~/.emacs-saves" t)))
 
-(require 'rx)
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
                     (not (gnutls-available-p))))
        (proto (if no-ssl "http" "https")))
-  ;; Comment/uncomment these two lines to enable/disable MELPA and MELPA Stable as desired
   (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t))
 
 (add-to-list 'package-archives
@@ -62,11 +59,12 @@
 
 (add-hook 'after-init-hook 'global-company-mode)
 
-(add-hook 'python-mode-hook 'anaconda-mode)
-(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
-
+;; Python mode hooks
 (defun my/python-mode-hook ()
   (add-to-list 'company-backends 'company-jedi))
+
+(add-hook 'python-mode-hook 'anaconda-mode)
+(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
 
 (add-hook 'python-mode-hook 'my/python-mode-hook)
 
