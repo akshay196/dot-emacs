@@ -72,3 +72,6 @@
 ;;     M-x package-install RET jedi RET
 ;;     M-x jedi:install-server RET
 ;; Then open Python file.
+
+;; Start server mode
+(server-start)
