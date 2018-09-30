@@ -21,7 +21,7 @@
 (setq backup-directory-alist
       `((".*" . ,"~/.emacs-saves/")))
 (setq auto-save-file-name-transforms
-      `((".*" ,"~/emacs-saves" t)))
+      `((".*" ,"~/.emacs-saves" t)))
 
 (require 'rx)
 (require 'package)
