@@ -41,5 +41,6 @@ package-list-packages` to browse and install packages from MELPA.
 
    Enable linum-mode, `M-x linum-mode`
 
+7. [Magit](https://github.com/magit/magit)
 
-Customization in progress..
+   Git inside Emacs

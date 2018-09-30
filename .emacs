@@ -17,6 +17,9 @@
 (global-set-key (kbd "C-2") 'split-window-below)
 (global-set-key (kbd "C-3") 'split-window-right)
 
+;; Binding for Magit status
+(global-set-key (kbd "C-x g") 'magit-status)
+
 ;; Temporary file management
 (setq backup-directory-alist
       `((".*" . ,"~/.emacs-saves/")))
@@ -43,10 +46,13 @@
  '(org-agenda-files (quote ("~/tmp/test.org")))
  '(package-selected-packages
    (quote
-    (company-jedi company-anaconda company markdown-mode+ markdown-mode))))
+    (magit company-jedi company-anaconda company markdown-mode+ markdown-mode))))
 
 (custom-set-faces
- ;; Background for line number strip
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(linum ((t (:inherit (shadow default) :background "white smoke")))))
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
