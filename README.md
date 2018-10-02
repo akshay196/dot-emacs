@@ -44,3 +44,7 @@ package-list-packages` to browse and install packages from MELPA.
 7. [Magit](https://github.com/magit/magit)
 
    Git inside Emacs
+
+8. [YAML Mode](https://github.com/yoshiki/yaml-mode)
+
+   Editing YAML files easily

@@ -43,7 +43,7 @@
  '(org-agenda-files (quote ("~/tmp/test.org")))
  '(package-selected-packages
    (quote
-    (magit company-jedi company-anaconda company markdown-mode+ markdown-mode))))
+    (yaml-mode magit company-jedi company-anaconda company markdown-mode+ markdown-mode))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
